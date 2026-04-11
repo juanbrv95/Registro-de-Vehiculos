@@ -1,0 +1,32 @@
+PLANTILLA PARA EMAILJS
+========================
+
+Ve a: https://www.emailjs.com/
+1. Dashboard > Email Templates > Create New Template
+2. Copia el siguiente contenido:
+
+---
+Subject: Solicitud de Autorización - Vehículo {{patente}}
+
+Estimado/a,
+
+Se solicita autorización para el siguiente vehículo:
+
+Nombre: {{nombre}}
+Vehículo: {{vehiculo}}
+Patente: {{patente}}
+Función: {{funcion}}
+
+==========================================
+RESPUESTA: Responde a este email indicando:
+- Si, Autorizado (para aprobar)
+- No, Autorizado (para rechazar)
+==========================================
+
+Saludos.
+---
+
+3. Guarda la plantilla con el nombre: "autorizacion"
+4. Copia el Template ID (está en la URL o en la configuración de la plantilla)
+
+El sistema está listo. Cuando el usuario haga clic en "Enviar email", se enviará automáticamente el correo con los datos del vehículo.
