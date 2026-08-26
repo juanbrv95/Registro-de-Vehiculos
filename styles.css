@@ -1,0 +1,46 @@
+body {
+    background: #f4f6f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+table {
+    background: white;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background: #eef5ff;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+}
+
+#buscar {
+    border-radius: 25px;
+    padding-left: 18px;
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 0.5em 0.75em;
+}
+
+h2 {
+    font-weight: 600;
+}
