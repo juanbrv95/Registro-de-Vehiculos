@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>CRUD Vehículos</title>
+    <title>Registro de Vehículos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap 5 -->
@@ -11,7 +11,7 @@
 </head>
 <body class="container mt-4">
 
-    <h2 class="mb-3">Registro de Vehículos</h2>
+    <h2 class="mb-3">Registro de Obleas</h2>
 
     <!-- CAMPO DE BÚSQUEDA Y BOTÓN -->
     <div class="row mb-3 align-items-center">
@@ -26,18 +26,28 @@
     <!-- FORMULARIO -->
     <form id="formVehiculo" class="border p-3 rounded mb-4 bg-white d-none">
         <h2 class="mb-3">Datos del Vehículo</h2>
+
         <div class="mb-2">
             <input type="text" id="nombre" class="form-control" placeholder="Nombre completo" required>
         </div>
+
         <div class="mb-2">
             <input type="text" id="vehiculo" class="form-control" placeholder="Vehículo (Ej: Toyota Hilux)" required>
         </div>
+
         <div class="mb-2">
             <input type="text" id="patente" class="form-control" placeholder="Patente" required>
         </div>
+
         <div class="mb-2">
             <input type="text" id="funcion" class="form-control" placeholder="Función (Ej: Docente, Alumno)" required>
         </div>
+
+        <!-- NUEVO CAMPO EMAIL -->
+        <div class="mb-2">
+            <input type="email" id="email" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+
         <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
 
@@ -50,10 +60,12 @@
                     <th>Vehículo</th>
                     <th>Patente</th>
                     <th>Función</th>
+                    <th>Email</th>
                     <th>Estado</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
+
             <tbody id="tablaVehiculos"></tbody>
         </table>
     </div>
@@ -61,5 +73,6 @@
     <!-- EmailJS SDK -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
